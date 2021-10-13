@@ -10,7 +10,7 @@
     "@babel/preset-env": "^7.15.8",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
-    "cz-conventional-changelog": "^3.3.0",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-define-config": "^1.1.1",
@@ -28,5 +28,9 @@
     "docs:build": "vuepress build docs",
     "commit": "cz"
   },
-  "dependencies": {}
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
