@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "module": "commonjs",
     "declaration": true,
     "noImplicitAny": false,
@@ -16,7 +17,10 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@elp-json-schema/*": ["packages/*"]
+    }
   },
   "exclude": ["node_modules", "**/__tests__", "dist/**"]
 }

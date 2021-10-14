@@ -10,6 +10,9 @@
     "@babel/preset-env": "^7.15.8",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.26",
+    "@vuepress/plugin-shiki": "^2.0.0-beta.26",
+    "core-js": "^3.18.3",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
@@ -32,5 +35,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "element-plus": "^1.1.0-beta.20",
+    "markdown-it-container": "^3.0.0",
+    "vue": "^3.2.20"
   }
 }

@@ -20,7 +20,8 @@ module.exports = {
 
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
-    'prettier/prettier': 'warn'
+    'prettier/prettier': 'warn',
+    '@typescript-eslint/no-var-requires': 'off'
     // 'array-bracket-spacing': ['error', 'always']
     // 'no-multiple-empty-lines': [ "error", { "max": 1, "maxBOF": 1} ]
   }

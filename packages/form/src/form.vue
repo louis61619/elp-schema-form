@@ -130,7 +130,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style scoped lang="less">
-/* 如果在scoped中選擇子元素的根元素也是會生效的 */
-</style>
