@@ -5,11 +5,7 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import Demo from '../global/demo.vue'
 
-// const locales = '__DEMOBLOCK_LOCALES__'
-
 const compsMap = []
-
-// console.log('fjiowjfow')
 
 require
   .context('../examples', true, /.vue$/)

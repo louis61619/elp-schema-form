@@ -1,69 +1,74 @@
 <template>
-  <proForm v-model="modelValue" v-bind="config"></proForm>
+  <ProForm v-model="modelValue" v-bind="formConfig"></ProForm>
 </template>
 
 <script>
 import { ref } from 'vue'
-import proForm from '@elp-json-schema/form'
+import ProForm from '@elp-json-schema/form'
 
 export default {
   components: {
-    proForm
+    ProForm
   },
   setup() {
     const modelValue = ref({})
 
-    const config = {
-      itemStyle: {},
+    const formConfig = {
+      formOptions: {
+        hideRequiredAsterisk: true,
+        labelPosition: 'top'
+      },
       colLayout: {
         span: 24
       },
       formItems: [
         {
-          field: 'name',
-          label: '用戶名',
-          placeholder: '請輸入用戶名'
+          field: 'email',
+          label: 'E-mail',
+          placeholder: '請輸入E-mail',
+          rules: [
+            { required: true, trigger: 'blur', message: 'E-mail是必填內容' },
+            {
+              type: 'email',
+              message: '請輸入正確的郵箱地址',
+              trigger: 'blur'
+            }
+          ]
         },
         {
-          field: 'realname',
-          label: '真實性名',
-          placeholder: '請輸入真實性名'
+          field: 'account',
+          label: '帳號',
+          placeholder: '請輸入帳號',
+          rules: [
+            { required: true, trigger: 'blur', message: '帳號是必填內容' },
+            {
+              pattern: /^[0-9]{10}$/,
+              message: '帳號必須是10位數字',
+              trigger: 'blur'
+            }
+          ]
         },
         {
           field: 'password',
-          type: 'password',
           label: '密碼',
+          type: 'password',
           placeholder: '請輸入密碼',
-          isHidden: true
-        },
-        {
-          field: 'cellphone',
-          label: '電話號碼',
-          placeholder: '請輸入電話號碼'
-        },
-        {
-          field: 'departmentId',
-          label: '部門',
-          placeholder: '請選擇部門',
-          type: 'select',
-          options: []
-        },
-        {
-          field: 'roleId',
-          label: '權限',
-          placeholder: '請選擇權限',
-          type: 'select',
-          options: []
+          rules: [
+            { required: true, trigger: 'blur', message: '密碼是必填內容' },
+            {
+              pattern: /^[0-9]{10}$/,
+              message: '密碼必須是10位數字',
+              trigger: 'blur'
+            }
+          ]
         }
       ]
     }
 
     return {
       modelValue,
-      config
+      formConfig
     }
   }
 }
 </script>
-
-<style lang="scss" scoped></style>

@@ -2,21 +2,6 @@
 import { path } from '@vuepress/utils'
 import { demoBlockPlugin } from '../plugin'
 
-const locales = {
-  '/': {
-    'hide-text': 'Hide',
-    'show-text': 'Expand',
-    'copy-button-text': 'Copy',
-    'copy-success-text': 'Copy success'
-  },
-  '/zh': {
-    'hide-text': '隐藏代码',
-    'show-text': '显示代码',
-    'copy-button-text': '复制代码片段',
-    'copy-success-text': '复制成功'
-  }
-}
-
 export default {
   title: 'elp-schema-form', // 顶部左侧标题
   description: 'Vue3 + ElementPlus 组件库',
@@ -37,9 +22,12 @@ export default {
     [demoBlockPlugin]
   ],
 
-  // markdown: {
-  //   config: (md) => mdPlugin(md)
-  // },
+  markdown: {
+    code: {
+      lineNumbers: false
+    }
+    // config: (md) => mdPlugin(md)
+  },
 
   themeConfig: {
     // logo: '/logo_soul.png',
@@ -63,7 +51,7 @@ export default {
         },
         {
           text: '組件',
-          children: ['/components/button.md']
+          children: ['/components/form.md']
         }
       ]
       // '/components/': [
