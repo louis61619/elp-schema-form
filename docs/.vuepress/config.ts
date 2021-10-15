@@ -27,7 +27,7 @@ export default {
     // editLink: false,
 
     navbar: [
-      { text: '指南', link: '/' },
+      { text: '介紹', link: '/' },
       {
         text: '组件',
         link: '/components/form'
