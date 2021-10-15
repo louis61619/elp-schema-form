@@ -61,8 +61,8 @@ export const mdPlugin = (md: MarkdownIt) => {
 
 export const demoBlockPlugin = {
   extendsMarkdown: async (md) => {
-    const shiki = shikiPlugin as any
-    await shiki({ theme: 'github-light', lang: 'vue' }).extendsMarkdown(md)
+    // const shiki = shikiPlugin as any
+    // await shiki({ theme: 'github-light', lang: 'vue' }).extendsMarkdown(md)
     md.use(mdPlugin)
   }
 }

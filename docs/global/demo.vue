@@ -8,11 +8,16 @@
     <!-- code -->
     <transition name="zoom">
       <div v-if="isExpanded" ref="meta" class="meta">
-        <div>
-          <div class="language-vue ext-vue">
-            <div v-html="decoded"></div>
-          </div>
+        <!-- <div> -->
+        <div class="language-vue ext-vue">
+          <pre code="language-vue">
+            <!-- <code>
+              <div v-html="decoded"></div>
+            </code> -->
+              <code v-html="'<div></div>' + decoded"></code>
+            </pre>
         </div>
+        <!-- </div> -->
       </div>
     </transition>
 
@@ -124,10 +129,10 @@ export default defineComponent({
   border-radius: 3px;
   transition: 0.2s;
 
-  --code-bg-color: #f9fafb;
-  --code-line-height: 24px;
-  --code-font-size: 14px;
-  --code-font-family: var(--font-family-mono);
+  /* --code-bg-color: #f9fafb; */
+  /* --code-line-height: 24px; */
+  /* --code-font-size: 14px; */
+  /* --code-font-family: var(--font-family-mono); */
   --demoblock-border: #eaecef;
   --demoblock-control: #d3dce6;
   --demoblock-control-bg: var(--c-bg);
@@ -146,10 +151,10 @@ export default defineComponent({
 
 .meta {
   border-top: solid 1px var(--demoblock-border);
-  background-color: var(--code-bg-color);
+  /* background-color: var(--code-bg-color); */
   overflow: hidden;
   /* height: 0; */
-  transition: height 0.2s;
+  /* transition: height 0.2s; */
 }
 
 .description {
@@ -161,14 +166,14 @@ export default defineComponent({
   color: var(--c-text);
   word-break: break-word;
   margin: 10px 10px 6px 10px;
-  background-color: var(--c-bg);
+  /* background-color: var(--c-bg); */
 }
 
 .demo-block-control {
   border-top: solid 1px var(--demoblock-border);
   height: 44px;
   box-sizing: border-box;
-  background-color: var(--demoblock-control-bg);
+  /* background-color: var(--demoblock-control-bg); */
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   text-align: center;
@@ -220,7 +225,7 @@ export default defineComponent({
 
 .demo-block-control .control-button {
   padding: 14px 0;
-  color: var(--c-brand);
+  /* color: var(--c-brand); */
   font-size: 14px;
   font-weight: 500;
   margin: 0 10px;
