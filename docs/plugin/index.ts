@@ -4,7 +4,6 @@ import MarkdownIt from 'markdown-it'
 import mdContainer from 'markdown-it-container'
 import type Token from 'markdown-it/lib/token'
 import type Renderer from 'markdown-it/lib/renderer'
-import { shikiPlugin } from '@vuepress/plugin-shiki'
 
 // const localMd = MarkdownIt()
 // const scriptSetupRE = /<\s*script[^>]*\bsetup\b[^>]*/

@@ -1,13 +1,19 @@
 {
   "name": "elp-schema-form",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "louis <louis61619@gmail.com>",
   "license": "MIT",
+  "main": "dist/elp-schema-form.esm.js",
+  "module": "dist/elp-schema-form.esm.js",
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/eslint-parser": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@rollup/plugin-typescript": "^8.3.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "@vuepress/plugin-register-components": "^2.0.0-beta.26",
@@ -21,6 +27,10 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^7.19.1",
     "prettier": "^2.4.1",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-vue": "^6.0.0",
     "typescript": "^4.4.4",
     "vue-eslint-parser": "^7.11.0",
     "vuepress": "^2.0.0-beta.26",
@@ -29,6 +39,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "build": "rollup --config ./rollup.config.js",
     "commit": "cz"
   },
   "config": {
