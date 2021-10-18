@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "author": "louis <louis61619@gmail.com>",
   "license": "MIT",
-  "main": "dist/elp-schema-form.esm.js",
+  "main": "dist/elp-schema-form.umd.js",
   "module": "dist/elp-schema-form.esm.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/eslint-parser": "^7.15.8",
@@ -27,6 +30,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^7.19.1",
     "prettier": "^2.4.1",
+    "rimraf": "^3.0.2",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-postcss": "^4.0.1",
     "rollup-plugin-typescript2": "^0.30.0",
@@ -39,8 +43,11 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "build": "rollup --config ./rollup.config.js",
-    "commit": "cz"
+    "build": "npm run clean && npm run build:esm && npm run build:umd",
+    "commit": "cz",
+    "build:esm": "rollup --config build/rollup.esm.config.js",
+    "build:umd": "rollup --config build/rollup.umd.config.js",
+    "clean": "rimraf ./dist"
   },
   "config": {
     "commitizen": {
@@ -50,7 +57,9 @@
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
     "element-plus": "^1.1.0-beta.20",
-    "markdown-it-container": "^3.0.0",
+    "markdown-it-container": "^3.0.0"
+  },
+  "peerDependencies": {
     "vue": "^3.2.20"
   }
 }
