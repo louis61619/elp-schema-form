@@ -6609,7 +6609,7 @@ vue-router@^4.0.10:
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.14"
 
-vue@^3.2.20, vue@^3.2.3:
+vue@^3.2.3:
   version "3.2.20"
   resolved "https://registry.npmjs.org/vue/-/vue-3.2.20.tgz"
   integrity sha512-81JjEP4OGk9oO8+CU0h2nFPGgJBm9mNa3kdCX2k6FuRdrWrC+CNe+tOnuIeTg8EWwQuI+wwdra5Q7vSzp7p4Iw==

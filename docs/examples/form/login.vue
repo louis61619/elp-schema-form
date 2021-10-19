@@ -4,7 +4,7 @@
 
 <script>
 import { ref } from 'vue'
-import { Form } from 'elp-json-schema'
+import { Form } from '@l-lib/elps'
 
 export default {
   components: {

@@ -1,3 +1,13 @@
+# elp-schema-form
+
+this is a component lib base on element-plus
+
+## how to use
+
+```
+npm i @l-lib/elps
+```
+
 test in local
 
 if you want test in local with npm link

@@ -1,6 +1,6 @@
 {
-  "name": "@l-lib/vue",
-  "version": "1.0.0",
+  "name": "@l-lib/elps",
+  "version": "0.0.1",
   "author": "louis <louis61619@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -39,7 +39,9 @@
     "typescript": "^4.4.4",
     "vue-eslint-parser": "^7.11.0",
     "vuepress": "^2.0.0-beta.26",
-    "vuepress-vite": "^2.0.0-beta.26"
+    "vuepress-vite": "^2.0.0-beta.26",
+    "@element-plus/icons": "^0.0.11",
+    "markdown-it-container": "^3.0.0"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
@@ -55,12 +57,9 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "dependencies": {
-    "@element-plus/icons": "^0.0.11",
-    "element-plus": "^1.1.0-beta.20",
-    "markdown-it-container": "^3.0.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
-    "vue": "^3.2.20"
+    "vue": ">=3.0.0",
+    "element-plus": ">=1.0.9"
   }
 }
