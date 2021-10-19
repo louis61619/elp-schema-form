@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "louis <louis61619@gmail.com>",
   "license": "MIT",
+  "private": false,
   "main": "dist/elp-schema-form.umd.js",
   "module": "dist/elp-schema-form.esm.js",
   "types": "dist/index.d.ts",

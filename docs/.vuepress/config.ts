@@ -10,6 +10,7 @@ export default {
   alias: {
     'elp-json-schema': path.resolve(__dirname, '../../packages')
   },
+  base: '',
 
   plugins: [[demoBlockPlugin]],
 
