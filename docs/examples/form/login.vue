@@ -1,14 +1,14 @@
 <template>
-  <ProForm v-model="modelValue" v-bind="formConfig"></ProForm>
+  <Form v-model="modelValue" v-bind="formConfig"></Form>
 </template>
 
 <script>
 import { ref } from 'vue'
-import ProForm from '@elp-json-schema/form'
+import { Form } from 'elp-json-schema'
 
 export default {
   components: {
-    ProForm
+    Form
   },
   setup() {
     const modelValue = ref({})

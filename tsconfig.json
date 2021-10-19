@@ -19,7 +19,8 @@
     "strict": true,
     "skipLibCheck": true,
     "paths": {
-      "@elp-json-schema/*": ["packages/*"]
+      "elp-json-schema": ["packages/index.ts"],
+      "elp-json-schema/*": ["packages/*"]
     }
   },
   "exclude": ["node_modules", "**/__tests__", "dist/**"]

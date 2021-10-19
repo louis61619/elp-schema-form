@@ -8,7 +8,7 @@ export default {
   bundler: '@vuepress/webpack',
   clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.ts'),
   alias: {
-    '@elp-json-schema': path.resolve(__dirname, '../../packages')
+    'elp-json-schema': path.resolve(__dirname, '../../packages')
   },
 
   plugins: [[demoBlockPlugin]],
