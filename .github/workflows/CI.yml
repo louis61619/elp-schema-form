@@ -44,6 +44,9 @@ jobs:
           git commit -m "deploy to Github pages"
           git push origin gh-pages -f
           echo 🤘 deploy gh-pages complete.
+      - name: build lib
+        run: |
+          yarn run build
       - name: realese package
         uses: JS-DevTools/npm-publish@v1
         with:
