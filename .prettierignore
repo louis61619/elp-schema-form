@@ -8,3 +8,4 @@
 **/*.sh
 
 /public/*
+docs/.vuepress/dist

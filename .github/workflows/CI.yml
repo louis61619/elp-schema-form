@@ -14,7 +14,7 @@ jobs:
       MY_SECRET: ${{secrets.commit_secret}}
       USER_NAME: louis61619
       USER_EMAIL: louis61619@gmail.com
-      PUBLISH_DIR: ./storybook-static
+      PUBLISH_DIR: ./docs/.vuepress/dist
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -25,12 +25,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: yarn install
+      - name: npm install
         run: |
-          yarn install
-      - name: run build-storybook
+          npm install
+      - name: build docs
         run: |
-          yarn run build-storybook
+          vuepress build docs
       - name: Commit files
         run: |
           cd $PUBLISH_DIR
