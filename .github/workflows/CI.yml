@@ -25,12 +25,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install
+      - name: install
         run: |
-          npm install
+          yarn install
       - name: build docs
         run: |
-          vuepress build docs
+          yarn run docs:build
       - name: Commit files
         run: |
           cd $PUBLISH_DIR
