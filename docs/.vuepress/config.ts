@@ -10,7 +10,7 @@ export default {
   alias: {
     '@l-lib/elps': path.resolve(__dirname, '../../packages')
   },
-  // base: '/elp-schema-form/',
+  base: process.env.NODE_ENV === 'production' && '/elp-schema-form/',
 
   plugins: [[demoBlockPlugin]],
 

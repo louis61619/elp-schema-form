@@ -3,7 +3,8 @@ import css from 'rollup-plugin-css-only'
 import typescript from 'rollup-plugin-typescript2'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import { name } from '../package.json'
-const file = (type) => `dist/${name}.${type}.js`
+
+const file = (type) => `dist/${name.split('/')[1]}.${type}.js`
 const overrides = {
   compilerOptions: { declaration: true },
   // exclude: ['tests/**/*.ts', 'tests/**/*.tsx']
