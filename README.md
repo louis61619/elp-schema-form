@@ -8,7 +8,7 @@ this is a component lib base on element-plus
 npm i @l-lib/elps
 ```
 
-then you can copy this code or see [example]()
+then you can copy this code or see [example](https://louis61619.github.io/elp-schema-form/)
 
 ```vue
 <template>

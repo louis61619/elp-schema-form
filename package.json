@@ -1,6 +1,6 @@
 {
   "name": "@l-lib/elps",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "author": "louis <louis61619@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -60,7 +60,7 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "element-plus": ">=1.0.9",
+    "element-plus": ">=1.0.9 || ^1.1.0-beta.1",
     "vue": ">=3.0.0"
   }
 }
