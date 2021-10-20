@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
-import { Form } from '@l-lib/elps'
+import { Form } from '@l-lib/elps/vonor-ui'
 import { IForm } from '@l-lib/elps/form/types'
 
 export default defineComponent({
