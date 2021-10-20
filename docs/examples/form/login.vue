@@ -2,22 +2,19 @@
   <Form v-model="modelValue" v-bind="formConfig"></Form>
 </template>
 
-<script>
-import { ref } from 'vue'
+<script lang="ts">
+import { ref, defineComponent } from 'vue'
 import { Form } from '@l-lib/elps'
+import { IForm } from '@l-lib/elps/form/types'
 
-export default {
+export default defineComponent({
   components: {
     Form
   },
   setup() {
     const modelValue = ref({})
 
-    const formConfig = {
-      formOptions: {
-        hideRequiredAsterisk: true,
-        labelPosition: 'top'
-      },
+    const formConfig: IForm = {
       colLayout: {
         span: 24
       },
@@ -70,5 +67,5 @@ export default {
       formConfig
     }
   }
-}
+})
 </script>

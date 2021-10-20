@@ -1,5 +1,5 @@
 import Form from './src/form.vue'
-import { withInstall } from '../utils/with-install'
+import { withInstall } from '../_utils/with-install'
 
 export * from './types'
 

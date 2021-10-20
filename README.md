@@ -4,11 +4,13 @@ this is a component lib base on element-plus
 
 ## how to use
 
+you need confirm you have install [element-plus](https://element-plus.org/zh-CN/)
+
 ```
 npm i @l-lib/elps
 ```
 
-then you can copy this code or see [example](https://louis61619.github.io/elp-schema-form/)
+then you can copy this code or see docs [example](https://louis61619.github.io/elp-schema-form/)
 
 ```vue
 <template>

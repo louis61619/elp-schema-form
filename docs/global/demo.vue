@@ -253,4 +253,8 @@ export default defineComponent({
 .zoom-leave-to {
   max-height: 0;
 }
+
+.demo-block::v-deep table {
+  margin: 0;
+}
 </style>

@@ -3,14 +3,14 @@ import { path } from '@vuepress/utils'
 import { demoBlockPlugin } from '../plugin'
 
 export default {
-  title: '@l-lib', // 顶部左侧标题
+  title: 'elp-schema-form',
   description: 'Vue3 + ElementPlus 组件库',
   bundler: '@vuepress/webpack',
   clientAppEnhanceFiles: path.resolve(__dirname, './clientAppEnhance.ts'),
   alias: {
     '@l-lib/elps': path.resolve(__dirname, '../../packages')
   },
-  base: process.env.NODE_ENV === 'production' ? '/elp-schema-form/' : '',
+  base: process.env.NODE_ENV === 'production' ? '/elp-schema-form/' : '/',
 
   plugins: [[demoBlockPlugin]],
 
@@ -47,10 +47,10 @@ export default {
         // }
       ],
       '/components/': [
-        '/components/overview.md',
+        '/components/overview',
         {
           text: '組件',
-          children: ['/components/form.md']
+          children: ['/components/form', '/components/table']
         }
       ]
     }

@@ -58,7 +58,9 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "countup.js": "^2.0.8"
+  },
   "peerDependencies": {
     "element-plus": ">=1.0.9 || ^1.1.0-beta.1",
     "vue": ">=3.0.0"
